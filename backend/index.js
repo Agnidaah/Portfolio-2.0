@@ -5,7 +5,8 @@ app.use(express.json());
 app.use(cors());
 const{MongoClient}=require('mongodb');
 //const MongoClient=require('mongodb').MongoClient;
-const urli='mongodb://127.0.0.1:27017';
+const urli='mongodb+srv://gurpreetsinghf22:0HeLmklCbKztvz4Y@cluster0.g3xlq3o.mongodb.net/?retryWrites=true&w=majority'
+//const urli='mongodb://127.0.0.1:27017';
 const database='Resume';
 const client=new MongoClient(urli);
 app.get("/home",async (req,res)=>{
