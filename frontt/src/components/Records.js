@@ -7,7 +7,7 @@ const Records=()=>{
         localStorage.clear();
     },[])
     const getColls=async ()=>{
-        let result=await fetch("http://localhost:1200/home");
+        let result=await fetch("https://agn-datath.onrender.com/home");
         result=await result.json();
         setColls(result);
         //console.warn(colls+"hello");

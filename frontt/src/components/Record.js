@@ -3,7 +3,7 @@ const Record=(props)=>{
     const navigate = useNavigate();
     const askColl=async(coll)=>{
         //console.warn(coll);
-        let result=await fetch(`http://localhost:1200/home/${coll}`);
+        let result=await fetch(`https://agn-datath.onrender.com/home/${coll}`);
         result=await result.json();
         //console.log(result);
         localStorage.setItem("user",JSON.stringify(result));
