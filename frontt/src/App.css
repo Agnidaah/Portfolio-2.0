@@ -1,0 +1,112 @@
+.App{
+  background-image: linear-gradient(to right, rgb(97, 97, 97),rgb(147, 167, 147));
+}
+.Navbar{
+  background-image: linear-gradient(to right, darkolivegreen,darkgreen);
+  display:inline-block;
+}
+.Navbar img{
+  float:left;
+  width:8%;
+  height:8%;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius:50%;
+  padding:1%;
+}
+.Navbar h2{
+  float:left;
+  margin-left:1%;
+  margin-top:3%
+}
+
+.nav-ul {
+  padding: 5px;
+  margin: 0;
+  text-decoration: none;
+}
+.nav-ul a{
+  text-decoration: none;
+  font-size: 4vw;
+  color:black;
+  font-weight:500;
+}
+.nav-right{
+  text-align:right;
+}
+.details ul{
+  font-style:oblique;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.records {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right:1vh;
+}
+
+.record {
+  animation: slidein 0.5s ease-in-out;
+  flex: 1 1 auto;
+  margin: 1vh;
+  min-width: 20vh;
+}
+@keyframes slidein {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.record button {
+  width: 100%;
+  height: 20vh;
+  margin: 5px;
+  font-size: 6vh;
+  padding: 10px;
+  border: none;
+  background-image: linear-gradient(to right, darkolivegreen,darkgreen);
+  color: transparent;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.record span {
+  color: white;
+  background-image: linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #2E2B5F, #8B00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.details{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.item{
+  animation: fadein 1s ease-in-out;
+  transform: rotate(-2deg);
+  background-image: linear-gradient(to right, rgb(255, 255, 255),rgb(150, 164, 150));
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  margin:5px;
+  list-style: none;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.item a{
+  text-decoration: none;
+}
